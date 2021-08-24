@@ -1,0 +1,61 @@
+name: Check ntoskrnl.exe
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+
+jobs:
+
+  check:
+
+    strategy:
+      matrix:
+        python: [3.9]
+        platform: [windows-2019, windows-2016]
+
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Clone volatility 3 & Create symbol file
+      run: |
+        pip3 install pefile yara-python capstone
+        $guid = (python3 guid-check.py)
+        New-Item guid.txt -Value $guid
+        Write-Output "ntoskrnl guid: $guid"
+        git clone https://github.com/volatilityfoundation/volatility3.git
+        cd volatility3
+        python3 setup.py install
+        python3 volatility3/framework/symbols/windows/pdbconv.py -p ntkrnlmp.pdb -g $guid
+        cd ..
+        try {
+           Move-Item volatility3/*.json.xz symbols/windows/ntkrnlmp.pdb/
+        } catch {
+           Write-Output "No change."
+        }
+        Remove-Item volatility3/* -Recurse
+
+    - name: Check ntoskrnl version & Push symbol files
+      shell: powershell
+      run: |
+        $exePath = "C:\\Windows\\System32\\ntoskrnl.exe"
+        $vi = (Get-ItemProperty $exePath).VersionInfo
+        $fileVersion = ([string]$vi.FileMajorPart) + "." + ([string]$vi.FileMinorPart) + "." + ([string]$vi.FileBuildPart) + "." + ([string]$vi.FilePrivatePart)
+        Write-Output "ntoskrnl version: $fileVersion"
+        $guid = (Get-Content guid.txt -Raw).ToLower()
+        Remove-Item guid.txt
+        git config --global user.email ${{ secrets.GH_MAIL }}
+        git config --global user.name ${{ secrets.GH_USER }}
+        $status = (git status -s)
+        if ($status.Length -eq 2) {
+           git pull
+           Write-Output "Added symbol file $fileVersion"
+           Write-Output "| $fileVersion  | $guid |${{ matrix.platform }}|" | Add-Content README.md -Encoding Default
+           git add README.md
+           git add symbols/windows/ntkrnlmp.pdb/*
+           git commit -m "Added new symbol file $fileVersion"
+           git push origin main
+        } else {
+           Write-Output "No change."
+        }
