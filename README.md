@@ -57,3 +57,4 @@ This repository is the Windows Symbol Table storage for [Volatility 3](https://g
 | 10.0.14393.4651  | e0572d333a6446129e52cbe9ae90897f1 |windows-2016|
 | 10.0.17763.2183  | 516fdc079c4e093d75f266192f75a52b1 |windows-2019|
 | 10.0.14393.4704  | a15830fe2e9141ba85535ab16623cf6f1 |windows-2016|
+| 10.0.17763.2237  | da773cf3acf6d826aed8ff5ae17e61591 |windows-2019|
