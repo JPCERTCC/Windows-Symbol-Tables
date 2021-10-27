@@ -30,6 +30,7 @@ This repository is the Windows Symbol Table storage for [Volatility 3](https://g
 | 10.0.19041.1110  | f526dbb121425697cbbf4fb22502519f1 |  Win10 |
 | 10.0.19041.1165  | 47114209a62f3b9930f6b8998dfd4a991 |  Win10 |
 | 10.0.19041.1237  | 1b4a6f5e0766c552c90710c8acc0295c1 |  Win10 |
+| 10.0.19041.1288  | ca8e2f01b822ede6357898bfbf8629971 |  Win10 |
 | 10.0.19041.329   | bbed7c2955fbe4522aaa23f4b8677ad91 |  Win10 |
 | 10.0.19041.388   | 110a2d89ed7a438feffc84f9cfdd6c001 |  Win10 |
 | 10.0.19041.450   | 1c9875f76c8f0fbf3eb9a9d7c1c274061 |  Win10 |
@@ -52,6 +53,7 @@ This repository is the Windows Symbol Table storage for [Volatility 3](https://g
 | 6.3.9600.20065   | 4dc173cc51ec446e895dc545db61083e1 | Win8.1 |
 | 6.3.9600.20090   | dfa4f6552dd34e03b16763d22438d8fa1 | Win8.1 |
 | 6.3.9600.20111   | b02b752659a9454694e2378cb3c25e611 | Win8.1 |
+| 6.3.9600.20144   | 57850e65d6e649a8b2a137aa12ed64651 | Win8.1 |
 | 10.0.17763.2114  | a1e1c9a90091da9805d0eba0470bec851 |windows-2019|
 | 10.0.14393.4583  | 517e128f7b7c4ea79491de6b9b9ce1901 |windows-2016|
 | 10.0.14393.4651  | e0572d333a6446129e52cbe9ae90897f1 |windows-2016|
