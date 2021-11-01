@@ -9,6 +9,8 @@ This repository is the Windows Symbol Table storage for [Volatility 3](https://g
 
 ## Reference
 
+How to Use Volatility 3 Offline: https://blogs.jpcert.or.jp/en/2021/09/volatility3_offline.html
+
 ## Symbol Table List
 
 | ntoskrnl version | GUID-AGE                          |   OS   |
