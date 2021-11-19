@@ -33,6 +33,7 @@ How to Use Volatility 3 Offline: https://blogs.jpcert.or.jp/en/2021/09/volatilit
 | 10.0.19041.1165  | 47114209a62f3b9930f6b8998dfd4a991 |  Win10 |
 | 10.0.19041.1237  | 1b4a6f5e0766c552c90710c8acc0295c1 |  Win10 |
 | 10.0.19041.1288  | ca8e2f01b822ede6357898bfbf8629971 |  Win10 |
+| 10.0.19041.1348  | 1f9bb45b28b806e4d18925c06e924b8c1 |  Win10 |
 | 10.0.19041.329   | bbed7c2955fbe4522aaa23f4b8677ad91 |  Win10 |
 | 10.0.19041.388   | 110a2d89ed7a438feffc84f9cfdd6c001 |  Win10 |
 | 10.0.19041.450   | 1c9875f76c8f0fbf3eb9a9d7c1c274061 |  Win10 |
