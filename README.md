@@ -16,6 +16,7 @@ How to Use Volatility 3 Offline: https://blogs.jpcert.or.jp/en/2021/09/volatilit
 | ntoskrnl version | GUID-AGE                          |   OS   |
 | :--------------- | :-------------------------------- | :----: |
 | 10.0.22000.318   | 32C1A669D5FFEFD41091F636CFDB6E991 |  Win11 |
+| 10.0.22000.348   | 27072505E9A6A497FAF0D5BA8D06EC061 |  Win11 |
 | 10.0.17763.379   | 8b11040a5928757b11390ac78f6b69251 |  Win10 |
 | 10.0.17763.437   | 8cfb49428dc86a330ce257778e0c2f931 |  Win10 |
 | 10.0.18326.535   | 616a94e33a4827b451b0e19c14c037921 |  Win10 |
