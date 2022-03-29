@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         python: [3.9]
-        platform: [windows-2022, windows-2019, windows-2016]
+        platform: [windows-2022, windows-2019]
 
     runs-on: ${{ matrix.platform }}
     steps:
