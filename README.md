@@ -130,3 +130,4 @@ How to Use Volatility 3 Offline: https://blogs.jpcert.or.jp/en/2021/09/volatilit
 | 10.0.20348.825  | a211952831047280c099caeba1f59eda1 |windows-2022|
 | 10.0.20348.887  | 6c9e507cccd78ce7910e2468abafa8831 |windows-2022|
 | 10.0.17763.3287  | 3424466848fc568fb899930b88a0e4441 |windows-2019|
+| 10.0.17763.3406  | 101da3076bfa5910d541ad002e41bb121 |windows-2019|
