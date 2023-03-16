@@ -20,7 +20,7 @@ jobs:
 
     - name: Clone volatility 3 & Create symbol file
       run: |
-        pip3 install pefile yara-python capstone
+        pip3 install pefile==2022.5.30 yara-python capstone
         $guid = (python3 guid-check.py)
         New-Item guid.txt -Value $guid
         Write-Output "ntoskrnl guid: $guid"
